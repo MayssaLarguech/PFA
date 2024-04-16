@@ -15,6 +15,7 @@ const PasswordReset = () => {
       setMessage('Password reset email sent. Check your inbox!');
       setError(null);
     } catch (error) {
+      // If successful, you can redirect the user to another pagegit
       setMessage('');
       setError(error.message);
     }
